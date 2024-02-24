@@ -59,7 +59,7 @@ function searchWeather() {
             image.src = "haze.png";
             break;
           default:
-            image.src = "haze.png";
+            image.src = "mist.png";
         }
 
         temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
