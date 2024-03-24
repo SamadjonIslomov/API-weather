@@ -21,7 +21,12 @@
     <div class="container">
       <div class="search-box">
         <i class="fa-solid fa-location-dot"></i>
-        <input type="text" placeholder="Enter your location" />
+        <input type="text" placeholder="Enter your location" button />
+        <img
+          src="chevron-down-solid.svg"
+          alt="chevron-down"
+          class="dsp cityBtn"
+        />
         <button class="fa-solid fa-magnifying-glass"></button>
       </div>
 
@@ -36,6 +41,7 @@
         <p class="temperature"></p>
         <p class="description"></p>
       </div>
+      <div id="current-date"></div>
 
       <div class="weather-details">
         <div class="humidity">
@@ -54,11 +60,32 @@
         </div>
       </div>
     </div>
-    <div class="output"></div>
+
+    <div class="overlay"></div>
+    <div class="modal">
+      <h1 class="city"></h1>
+      <div id="current-date"></div>
+    </div>
+    <div class="cityName">
+      <button class="region region1">Andijon</button>
+      <button class="region region2">Buxoro</button>
+      <button class="region region3">Farg'ona</button>
+      <button class="region region4">Jizzax</button>
+      <button class="region region5">Xorazm</button>
+      <button class="region region6">Namangan</button>
+      <button class="region region7">Navoiy</button>
+      <button class="region region8">Qashqadaryo</button>
+      <button class="region region9">Samarqand</button>
+      <button class="region region10">Surxondaryo</button>
+      <button class="region region11">Sirdaryo</button>
+      <button class="region region12">Toshkent</button>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/7c8801c017.js"
       crossorigin="anonymous"
     ></script>
+    <div class="modal"></div>
     <script src="index.js"></script>
   </body>
 </html>
